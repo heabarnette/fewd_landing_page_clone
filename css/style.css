@@ -98,3 +98,8 @@ div {
 	cursor: pointer;
 	color: #333333;
 }
+/* background */
+.introduction {
+  background: url(img/first-background.jpg) no-repeat center center fixed; 
+   background-size: cover;
+}
