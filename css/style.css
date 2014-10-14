@@ -39,6 +39,8 @@ ol, ul {
 .content {
 	box-sizing: border-box;
 	padding: 0 15px;
+	margin: 0 auto;
+	width: 970px;
 }
 blockquote, q {
 	quotes: none;
@@ -70,9 +72,9 @@ div {
 	background-color: #fff;
 }
 .top-navigation > .content {
-	width: 970px;
+	
 	height: 70px;
-	margin: 0 auto;
+
 }
 .top-navigaation .logo {
 	height: 70px;
@@ -104,7 +106,7 @@ div {
    background-size: cover;
    background-position: center bottom;
     background-repeat: no-repeat;
-       height: 735px;
+       height: 408px;
     overflow: auto;
 }
 
