@@ -70,6 +70,8 @@ div {
 /* Navigation Section */
 .top-navigation {
 	background-color: #fff;
+	position: fixed;
+	width: 100%;
 }
 .top-navigation > .content {
 	
@@ -118,4 +120,36 @@ div {
     border: 1px solid black;
     box-sizing: border-box;
     height: 4em;
+}
+.cases {
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 160px;
+}
+.cases .content {
+    margin-top: 126px;
+    padding: none;
+    color: #1d1e21;
+    text-align: center;
+}
+.cases h2 {
+    font-size: 44px;
+    margin: 26px 0 50px;
+    font-weight: 300;
+}
+.cases .devices {
+    display: flex;
+}
+.cases .devices > li {
+    width: 33.3333333%;
+}
+.cases .devices h3 {
+    font-weight: 400;
+    font-size: 25px;
+    margin: 40px 0px 30px;
+
+}
+.cases .devices p {
+    font-weight: 300;
+    font-size: 21px;
 }
