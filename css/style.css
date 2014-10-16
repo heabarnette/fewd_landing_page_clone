@@ -22,6 +22,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -36,16 +37,9 @@ ol, ul {
 }
 
 /* Custom Styles */
-<-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
-<link href="css/font-awesome.min.css" rel="stylesheet">
 
-.content {
-	box-sizing: border-box;
-	padding: 0 15px;
-	margin: 0 auto;
-	width: 970px;
-}
-blockquote, q {
+
+/*blockquote, q {
 	quotes: none;
 }
 blockquote:before, blockquote:after,
@@ -57,31 +51,37 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+*/
 
 body {
     background-color: LightGray;
     font-family: 'Roboto', sans-serif; 
-font-size: 16px; 
-color: #838994; 
-letter-spacing: 0.03em;
+	font-size: 16px; 
+	color: #838994; 
+	letter-spacing: 0.03em;
+	-webkit-font-smoothing: antialiased;
 }
 div {
-    border: 1px solid Chocolate;
+    /*border: 1px solid Chocolate;*/
 }
 
+.content {
+	/*box-sizing: border-box;*/
+	padding: 0 15px;
+	margin: 0 auto;
+	width: 970px;
+}
 /* Navigation Section */
 .top-navigation {
 	background-color: #fff;
 	position: fixed;
 	width: 100%;
+    border-bottom: 1px solid #DDD;
 }
 .top-navigation > .content {
-	
 	height: 70px;
-
 }
-.top-navigaation .logo {
+.top-navigation .logo {
 	height: 70px;
 }
 .top-navigation .links {
@@ -90,17 +90,16 @@ div {
 	color: #838994;
 	font-size: 16px;
 	margin-top: 25px;
-	overflow: auto;
-	-webkit-font-smoothing: antialiased;
+	/*overflow: auto;
+	-webkit-font-smoothing: antialiased;*/
 }
 .top-navigation .links li {
 	display: inline-block;
 	margin-left: 25px;
 }
-
-.top-navigation .links .active {
+.top-navigation .links li.active {
     color: #4c5058;
-    font-weight: 600;
+    font-weight: 500;
 }
 .top-navigation .links li:hover {
 	cursor: pointer;
@@ -108,13 +107,73 @@ div {
 }
 /* background */
 .introduction {
-  background: url('../img/first-background.jpg'); 
-   background-size: cover;
-   background-position: center bottom;
+  	background-image: url('../img/first-background.jpg'); 
+   	background-size: cover;
+   	background-position: center bottom;
     background-repeat: no-repeat;
-       height: 408px;
+    height: 408px;
     overflow: auto;
 }
+.introduction h1,
+.introduction h3 {
+    color: white;
+    text-align: center;
+    font-weight: 300;
+}
+.introduction h1 {
+    margin-top: 280px;
+    font-size: 50px;
+}
+.introduction h3 {
+    margin-top: 20px;
+    font-size: 25px;
+}
+/*buttons*/
+.introduction .buttons {
+    color: white;
+    text-align: center;
+    margin-top: 25px;
+}
+.introduction .half {
+    width: 49%;
+    padding: 0 15px;
+    display: inline-block;
+    vertical-align: bottom;
+    font-size: 18px;
+    line-height: 1.2;
+}
+.half.learn {
+    text-align: right;
+}
+.half.watch {
+    text-align: left;
+    padding: 16px 24px;
+    font-weight: 500;
+}
+.introduction .learn button {
+    width: 155px;
+    background-color: #f15a29;
+    border-color: #f15a29;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 16px 24px;
+    color: white;
+    font-size: 18px;
+}
+:focus {
+    outline: none;
+}
+.introduction .learn button:hover {
+    background-color: #d9400e;
+    border-color: #cf3d0e;
+    cursor: pointer;
+}
+.introduction .watch img {
+    position: relative;
+    top: 10px;
+}
+
 /*boxes in a row*/
 .cases .devices {
     width: 33.3333333%;
