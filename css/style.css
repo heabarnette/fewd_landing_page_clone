@@ -212,6 +212,39 @@ div {
     box-sizing: border-box;
     height: 4em;
 }*/
+/*What is Karma/ Buy Now*/
+/*Buy Section*/
+.karma-go {
+	background-image: url('../img/buy-now-bg.jpg'); 
+   	background-size: cover;
+   	background-position: 0 bottom;
+    background-repeat: no-repeat;
+    height: 810px;
+}    
+.karma-go .left {
+	width: 21em;
+	font-family: 'Roboto';
+	padding-left: 8em;
+	font-size: 18px;
+	line-height: 1.5;
+}
+.karma-go .left > h3{
+	font-color: #f15a29;
+	font-size: 30px;
+	font-weight: 100;
+	padding-top: 2em;
+}
+.left button {
+    width: 135px;
+    background-color: #f15a29;
+    border-color: #f15a29;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 16px 24px;
+    color: white;
+    font-size: 18px;
+}
 /*footer*/
 .social {
     background-color: #fff;
