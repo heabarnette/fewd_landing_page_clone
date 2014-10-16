@@ -227,12 +227,21 @@ div {
 	padding-left: 8em;
 	font-size: 18px;
 	line-height: 1.5;
+	padding: 0 15px;
+	margin: 0 auto;
+	width: 970px;
+
 }
-.karma-go .left > h3{
+.karma-go h3{
 	font-color: #f15a29;
 	font-size: 30px;
 	font-weight: 100;
 	padding-top: 2em;
+	margin-bottom: 1em;
+}
+.karma-go p{
+	width: 16em;
+	margin-bottom: 1.5em;
 }
 .karma-go button {
     width: 135px;
